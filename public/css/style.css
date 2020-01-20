@@ -169,7 +169,7 @@ img.petiteimg {
   margin: 0;
   padding: 0;
   display: block;
-  animation: best 20s infinite linear;
+  animation: best 10s infinite linear;
   display: flex;
   overflow: hidden;
 }
