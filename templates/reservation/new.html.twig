@@ -1,10 +1,23 @@
-{% block title %}Session admin{% endblock %}
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouveau lieu{% endblock %}
 
 {% block body %}
-    <h1>Créer un nouveau lieu à réserver</h1>
+<div class="container-fluide">
+    <header>
+        {% include 'nav.html.twig' %}
+    </header>
+    {% block main %}
 
+    <main id="pAvis">
+        <section class="text-center">
+    <h1>Ajouter un nouveau lieu</h1>
+{# {{dump(test)}} #}
     {{ include('reservation/_form.html.twig') }}
 
-    <a href="{{ path('reservation_index') }}">Retour à la liste</a>
+    <a href="{{ path('reservation_index') }}">Retour à la liste</a></section>
+    </main>
+    {% endblock %}
+    {% include 'footer.html.twig' %}
+</div>
 {% endblock %}
-{% include 'footer.html.twig' %}

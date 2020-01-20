@@ -1,28 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="container-fluide" id="pPlan">
+<div class="container-fluide" id="pPlan">
 
-        <header>
-            {% include 'nav.html.twig' %}
-            <ul class="nav justify-content-center pt-2">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#presentation">Présentation</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#capacite">Capacité</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#avis">Avis</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#acces">Accès</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="btn btnDevis mb-2">Devis Gratuit</a>
-                </li>
-              </ul>
-            </header>
+  <header>
+    {% include 'nav.html.twig' %}
+   
+  </header>
 
             {% block main %}
             <main>
@@ -59,6 +43,6 @@
             {% endblock %}
             
             {% include 'footer.html.twig' %}
-
+</div>
     
 {% endblock %}
